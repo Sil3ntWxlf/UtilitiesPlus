@@ -1,0 +1,7 @@
+name: UtilitiesPlus
+version: ${project.version}
+main: io.github.sil3ntwxlf.UtilitiesPlus
+api-version: 1.16
+depend: [PlaceholderAPI, Vault]
+authors: [Sil3ntWxlf]
+description: A fully fledged utility plugin; for ease for production!
