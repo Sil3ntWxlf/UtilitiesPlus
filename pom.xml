@@ -45,6 +45,11 @@
                                     <pattern>io.papermc.lib</pattern>
                                     <shadedPattern>io.github.sil3ntwxlf.UtilitiesPlus.paperlib</shadedPattern> <!-- Replace this -->
                                 </relocation>
+                                <relocation>
+                                    <pattern>org.bstats</pattern>
+                                    <!-- Replace this with your package! -->
+                                    <shadedPattern>io.github.sil3ntwxlf</shadedPattern>
+                                </relocation>
                             </relocations>
                         </configuration>
                     </execution>
