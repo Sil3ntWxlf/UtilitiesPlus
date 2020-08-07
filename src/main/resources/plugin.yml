@@ -3,5 +3,56 @@ version: ${project.version}
 main: io.github.sil3ntwxlf.UtilitiesPlus
 api-version: 1.16
 depend: [PlaceholderAPI, Vault, LuckPerms, EssentialsX]
-authors: [Sil3ntWxlf]
+softdepend: [WorldEdit, FastAsyncWorldEdit]
+author: [Sil3ntWxlf]
 description: A fully fledged utility plugin; for ease for production!
+
+load: STARTUP
+database: false
+prefix: UP
+website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
+
+commands:
+  gamemodesurvival:
+    description: Sets your gamemode to survival mode.
+    aliases: [g0]
+    permission: up.gms
+    usage: /&l&cg0 &l&e[player]
+  gamemodecreative:
+    description: Sets your gamemode to creative mode.
+    aliases: [g1]
+    permission: up.gmc
+    usage: /&l&cg1 &l&e[player]
+  gamemodeadventure:
+    description: Sets your gamemode to adventure mode.
+    aliases: [g2]
+    permission: up.gma
+    usage: /&l&cg2 &l&e[player]
+  gamemodespectator:
+    description: Sets your gamemode to adventure mode.
+    aliases: [g3]
+    permission: up.gmsp
+    usage: /&l&cg3 &l&e[player]
+
+  permissions:
+    up.*:
+      description: Allows full access over UtilitiesPlus
+      children:
+        up.gamemodesurvival: true
+        up.gamemodecreative: true
+        up.gamemodeadventure: true
+        up.gamemodespectator: true
+        default: op
+    up.gamemodesurvival:
+      description: Allows access to survival modes alias
+      default: true
+    up.gamemodecreative:
+      description: Allows access to creative modes alias
+      default: true
+    up.gamemodeadventure:
+      description: Allows access to adventure modes alias
+      default: true
+    up.gamemodespectator:
+      description: Allows access to spectator modes alias
+      default: true
+
