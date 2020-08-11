@@ -17,21 +17,7 @@ commands:
     description: Type gamemode to view all gamemode aliases
     aliases: [up gamemodes]
     permission: up.gamemodes
-    usage: |
-    Do /utilitiesplus help to see commands
-  up help:
-    description: Allows user to see commands for UtilitiesPlus
-    aliases: [up]
-    permission: up.help
-    usage: |
-
-      Typing /g0 sets the player in survival mode
-
-      Typing /g1 sets the player in creative mode
-
-      Typing /g2 sets the player in adventure mode
-
-      Typing /g3 sets the player in spectator mode
+    usage: | Do /utilitiesplus help to see commands
 
   permissions:
     up.*:
