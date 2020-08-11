@@ -2,7 +2,7 @@ name: UtilitiesPlus
 version: ${project.version}
 main: io.github.sil3ntwxlf.UtilitiesPlus
 api-version: 1.16
-depend: [PlaceholderAPI, Vault, LuckPerms, EssentialsX]
+depend: [PlaceholderAPI, Vault, LuckPerms, Essentials]
 softdepend: [WorldEdit, FastAsyncWorldEdit]
 author: [Sil3ntWxlf]
 description: A fully fledged utility plugin; for ease for production!
@@ -13,26 +13,43 @@ prefix: UP
 website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
 
 commands:
-  gamemodesurvival:
+  gamemode survival:
     description: Sets your gamemode to survival mode.
     aliases: [g0]
     permission: up.gms
-    usage: /&l&cg0 &l&e[player]
-  gamemodecreative:
+    usage: |
+    Do /utilitiesplus help to see commands
+  gamemode creative:
     description: Sets your gamemode to creative mode.
     aliases: [g1]
     permission: up.gmc
-    usage: /&l&cg1 &l&e[player]
-  gamemodeadventure:
+    usage: |
+    Do /utilitiesplus help to see commands
+  gamemode adventure:
     description: Sets your gamemode to adventure mode.
     aliases: [g2]
     permission: up.gma
-    usage: /&l&cg2 &l&e[player]
-  gamemodespectator:
+    usage: |
+    Do /utilitiesplus help to see commands
+  gamemode spectator:
     description: Sets your gamemode to adventure mode.
     aliases: [g3]
     permission: up.gmsp
-    usage: /&l&cg3 &l&e[player]
+    usage: |
+    Do /utilitiesplus help to see commands
+  up help:
+    description: Allows user to see commands for UtilitiesPlus
+    aliases: [up]
+    permission: up.help
+    usage: |
+
+      Typing /g0 sets the player in survival mode
+
+      Typing /g1 sets the player in creative mode
+
+      Typing /g2 sets the player in adventure mode
+
+      Typing /g3 sets the player in spectator mode
 
   permissions:
     up.*:
