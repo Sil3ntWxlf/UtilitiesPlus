@@ -13,28 +13,10 @@ prefix: UP
 website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
 
 commands:
-  gamemode survival:
-    description: Sets your gamemode to survival mode.
-    aliases: [g0]
-    permission: up.gms
-    usage: |
-    Do /utilitiesplus help to see commands
-  gamemode creative:
-    description: Sets your gamemode to creative mode.
-    aliases: [g1]
-    permission: up.gmc
-    usage: |
-    Do /utilitiesplus help to see commands
-  gamemode adventure:
-    description: Sets your gamemode to adventure mode.
-    aliases: [g2]
-    permission: up.gma
-    usage: |
-    Do /utilitiesplus help to see commands
-  gamemode spectator:
-    description: Sets your gamemode to adventure mode.
-    aliases: [g3]
-    permission: up.gmsp
+  gamemode:
+    description: Type gamemode to view all gamemode aliases
+    aliases: [up gamemodes]
+    permission: up.gamemodes
     usage: |
     Do /utilitiesplus help to see commands
   up help:

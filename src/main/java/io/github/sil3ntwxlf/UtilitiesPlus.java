@@ -1,5 +1,6 @@
 package io.github.sil3ntwxlf;
 
+import io.github.sil3ntwxlf.commands.GamemodeAliasesCommand;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +15,8 @@ public final class UtilitiesPlus extends JavaPlugin {
         // Optional: Add custom charts
         metrics.addCustomChart(new Metrics.SimplePie("chart_id", () -> "servers"));
 
+        //Command Aliases Ahoy
+        getCommand("gamemode").setExecutor(new GamemodeAliasesCommand());
     }
     @Override
     public void onDisable() {
