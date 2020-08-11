@@ -2,22 +2,24 @@ name: UtilitiesPlus
 version: ${project.version}
 main: io.github.sil3ntwxlf.UtilitiesPlus
 api-version: 1.16
+
 depend: [PlaceholderAPI, Vault, LuckPerms, Essentials]
 softdepend: [WorldEdit, FastAsyncWorldEdit]
+
 author: [Sil3ntWxlf]
+website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
 description: A fully fledged utility plugin; for ease for production!
 
 load: STARTUP
 database: false
 prefix: UP
-website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
 
 commands:
   gamemode:
     description: Type gamemode to view all gamemode aliases
     aliases: [up gamemodes]
     permission: up.gamemodes
-    usage: | Do /utilitiesplus help to see commands
+    usage: Do /utilitiesplus help to see commands
 
   permissions:
     up.*:
