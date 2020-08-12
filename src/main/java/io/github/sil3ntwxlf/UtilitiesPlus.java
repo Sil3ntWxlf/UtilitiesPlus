@@ -4,16 +4,15 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import io.github.sil3ntwxlf.commands.GamemodeAliasesCommand;
+import io.github.sil3ntwxlf.commands.CommandAliases;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.HashMap;
-import java.util.Map;
 
 
 public final class UtilitiesPlus extends JavaPlugin {
@@ -34,7 +33,7 @@ public final class UtilitiesPlus extends JavaPlugin {
         metrics.addCustomChart(new Metrics.SimplePie("chart_id", () -> "servers"));
 
         //Command Aliases Ahoy
-        getCommand("gamemode").setExecutor(new GamemodeAliasesCommand());
+        getCommand("gamemode").setExecutor(new CommandAliases());
 
         //Configuration Generation
         try {
