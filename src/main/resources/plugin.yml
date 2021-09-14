@@ -1,12 +1,12 @@
 name: UtilitiesPlus
 version: ${project.version}
 main: io.github.sil3ntwxlf.UtilitiesPlus
-api-version: 1.16
+api-version: 1.17
 
-depend: [PlaceholderAPI, Vault, LuckPerms, Essentials]
-softdepend: [WorldEdit, FastAsyncWorldEdit]
+depend: []
+softdepend: []
 
-author: [Sil3ntWxlf]
+author: Sil3ntWxlf
 website: https://github.com/Sil3ntWxlf/UtilitiesPlus/
 description: A fully fledged utility plugin; for ease for production!
 
